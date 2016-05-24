@@ -5,6 +5,24 @@ package StatePattern;
  */
 public class StateDemo {
     public static void main(String[] args) {
-        System.out.println("State Demo Main output.");
+        Fan fan = new Fan();
+
+        System.out.println(fan);
+
+        fan.pullChain();
+
+        System.out.println(fan);
+
+        fan.pullChain();
+
+        System.out.println(fan);
+
+        fan.pullChain();
+
+        System.out.println(fan);
+
+        fan.pullChain();
+
+        System.out.println(fan);
     }
 }
