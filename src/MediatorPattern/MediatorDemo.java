@@ -2,6 +2,10 @@ package MediatorPattern;
 
 /**
  * Created by WeichengXu on 2016/5/23.
+ *
+ * With Mediator, Command and lights are loose coupled
+ * Communication between Command and lights are simplified, Commands are much simpler.
+ * But be careful, do not make a mediator a giant object.
  */
 public class MediatorDemo {
     public static void main(String[] args) {

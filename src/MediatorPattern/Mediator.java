@@ -5,6 +5,7 @@ import java.util.List;
 
 /**
  * Created by WeichengXu on 2016/5/23.
+ * This Mediator is the link from the command to lights
  */
 public class Mediator {
 

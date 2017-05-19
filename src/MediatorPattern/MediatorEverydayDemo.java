@@ -15,7 +15,12 @@ public class MediatorEverydayDemo {
     public MediatorEverydayDemo(int seconds) {
 
         toolkit = Toolkit.getDefaultToolkit();
+
+        //Timer is the mediator that acts as hub or router
         timer = new Timer();
+        //timer knows about two colleagues, colleagues do not know about each other
+        //this makes colleagues loose coupling,
+        //so that each colleague can be reusable, because they are not hard referenced to one another
         timer.schedule(new ReminderTask(), seconds * 1000);
         timer.schedule(new ReminderTaskWithoutBeep(), seconds * 2 * 1000);
     }
